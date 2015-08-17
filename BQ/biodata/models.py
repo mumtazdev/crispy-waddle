@@ -10,6 +10,8 @@ class BioSiswa(models.Model):
 	tanggal_lahir = models.DateField()
 	alamat = models.CharField(max_length=200)
 	foto = models.ImageField()
+	def __str__(self):
+		return self.nama_depan
 
 class BioOrtu(models.Model):
 	PENDIDIKAN = (
@@ -40,5 +42,6 @@ class BioOrtu(models.Model):
 	no_telp = models.IntegerField(blank=True, null=True)
 	no_hp = models.IntegerField(blank=True, null=True)
 	email = models.EmailField(blank=True, null=True)
-
+	def __str__(self):
+			return self.nama_ayah
 

@@ -1,8 +1,8 @@
 
-{% if latest_question_list %}
+{% if list_siswa %}
     <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+    {% for question in list_siswa %}
+        <li><a href="{% url 'polls:detail' anak.id %}">{{ biosiswa.nama_depan }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^$', include('biodata.urls', namespace="biodata")),
+    url(r'^bio/', include('biodata.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
