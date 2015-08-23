@@ -1,5 +1,6 @@
 from django.db import models
 
+# di edit agus
 
 class BioSiswa(models.Model):
 	NISL = models.IntegerField(primary_key=True, unique=True)
